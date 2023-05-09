@@ -1,13 +1,11 @@
 body{
     color: white;
-
-    
-    background: #f6d365;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f6d365, #fda085);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0a689e, #270744); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+    background-image: linear-gradient(to right top, #090a1b,#02041d ,#000000); 
+    background-attachment: fixed;
 }
+
+
 h1{
     text-align: center;
 }
+
