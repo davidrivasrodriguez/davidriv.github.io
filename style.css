@@ -1,4 +1,13 @@
 body{
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
     color: white;
+
+    
+    background: #f6d365;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f6d365, #fda085);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0a689e, #270744); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+h1{
+    text-align: center;
 }
