@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="bigsupps, big, supps, suplementos, suplementacion">
+    <meta name="description" content="Tienda suplementos BIGSupps">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>BIGSupps</title>
+</head>
+<body>
+    <div id="pages">
+      <a href="index.html">Inicio</a>
+      <span>&emsp;</span>
+      <a href="pages/cuenta.html">Cuenta</a>
+      <span>&emsp;</span>
+      <a href="pages/cesta.html">Cesta</a>
+      <span>&emsp;</span>
+      <a href="pages/info.html">Información</a>
+      <span>&emsp;</span>
+    </div>
+    <div id="top">
+        <div >
+            <h1 id="tittle">Suplementos de Calidad</h1>
+        </div>
+        <div>
+            <h3 id="eslogan"><a style="color: red;">Dream</a> <a style="color:blue">BIG</a> <a style="color: white;">&</a> <a style="color: red;">Be</a> <a style="color: blue;">BIG</a></h3>
+        </div>
+    </div>
+
+    <div class="slides-container">
+
+        
+        <div class="slides fade">
+            <a href="https://bigsupps.site/products/micellar-casein-with-toppings?_pos=1&_sid=c9ff000d6&_ss=r&variant=39706788757568" target="_blank"><img src="micellarcasein_cacahuete.jpg" style="width: 22%;"></a>
+            <div class="text">&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;<br>CASEINA MICELAR CACAHUETE</div>
+        </div>
+        <div class="slides fade">
+            <a href="https://bigsupps.site/collections/featured/products/creabig-fiesta-piruleta" target="_blank"><img src="creatinacreapure_piruleta.jpg" style="width: 22%;" ></a>
+            <div class="text">&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;<br>CREATINA PIRULETA CREAPURE</div>
+        </div>
+        <div class="slides fade">
+            <a href="https://bigsupps.site/collections/featured/products/only-whey-zero-cacaolat" target="_blank"><img src="wheycacaolat.jpg" style="width: 22%;" ></a>
+            <div class="text">&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;&#8213;<br>PROTEINA WHEY CACAOLAT</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div><br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("slides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+</html>
