@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athlete's Edge</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="fotos/logo.ico">
+</head>
+<body>
+    <header>
+        <img src="fotos/logo.png" alt="Supplement Store Logo" class="logo"> 
+        <h1>Athlete's Edge</h1>
+        <button id="cart-button">Carrito</button>
+        <button onclick="window.location.href='about.html'" id="cart-button">Acerca de</button>
+    </header>
+    <main>
+        <section id="products-page">
+            <h2>Productos</h2>
+            <div id="products-container">
+                <div class="product" data-id="1" data-name="Proteína Whey" data-price="69.99">
+                    <img src="fotos/prote.jpg" alt="Proteína Amix">
+                    <h3>Proteína Whey</h3>
+                    <p>69.99€</p>
+                    <button class="add-to-cart-button">Añadir al carrito</button>
+                </div>
+                <div class="product" data-id="2" data-name="Creatina" data-price="35.50">
+                    <img src="fotos/creatina.jpg" alt="Creatina Amix">
+                    <h3>Creatina</h3>
+                    <p>35.50€</p>
+                    <button class="add-to-cart-button">Añadir al carrito</button>
+                </div>
+                <div class="product" data-id="3" data-name="Pre Entreno CellUp Amix" data-price="39.99">
+                    <img src="fotos/pwo.jpg" alt="Pre Entreno">
+                    <h3>Pre Entreno</h3>
+                    <p>39.99€</p>
+                    <button class="add-to-cart-button">Añadir al carrito</button>
+                </div>
+                <div class="product" data-id="4" data-name="GlycodeX Ciclodextrina Amix" data-price="55.05">
+                    <img src="fotos/glycodex.jpg" alt="GlycodeX">
+                    <h3>GlycodeX Ciclodextrina Amix</h3>
+                    <p>55.05€</p>
+                    <button class="add-to-cart-button">Añadir al carrito</button>
+                </div>
+                <div class="product" data-id="5" data-name="M.A.P.S Aminoacidos Esenciales Amix" data-price="34.99">
+                    <img src="fotos/maps.jpg" alt="MAPS">
+                    <h3>M.A.P.S Aminoacidos Esenciales Amix</h3>
+                    <p>34.99€</p>
+                    <button class="add-to-cart-button">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Athlete's Edge</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
